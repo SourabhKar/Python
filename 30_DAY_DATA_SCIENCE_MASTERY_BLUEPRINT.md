@@ -940,9 +940,9 @@
 5. Build a portfolio that proves your expertise
 
 **Success Formula**:
-```
-10 hours/day × 30 days × Deep Focus × Active Practice = Top 0.1% Performer
-```
+
+**Total Time Investment**: 10 hours/day × 30 days = 300 hours of focused study
+**Key Multipliers**: Deep Focus + Active Practice + Consistent Execution = Top 0.1% Performer
 
 ---
 

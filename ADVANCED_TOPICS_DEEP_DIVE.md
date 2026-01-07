@@ -15,7 +15,7 @@
 
 ---
 
-## 1. Low-Level System Design {#low-level-system-design}
+## 1. Low-Level System Design
 
 ### Design Principles for ML Systems
 
@@ -338,7 +338,7 @@ class FeatureStore:
 
 ---
 
-## 2. Hyperparameter Tuning Advanced Techniques {#hyperparameter-tuning}
+## 2. Hyperparameter Tuning Advanced Techniques
 
 ### Bayesian Optimization with Optuna
 ```python
@@ -453,7 +453,7 @@ tune.run(train_model, scheduler=pbt, num_samples=8)
 
 ---
 
-## 3. Semi-Supervised Learning {#semi-supervised-learning}
+## 3. Semi-Supervised Learning
 
 ### Self-Training
 ```python
@@ -600,7 +600,7 @@ def mixmatch(model, x_labeled, y_labeled, x_unlabeled, alpha=0.75, T=0.5, K=2):
 
 ---
 
-## 4. Scaling & Optimization Strategies {#scaling-optimization}
+## 4. Scaling & Optimization Strategies
 
 ### Time Optimization
 
@@ -797,15 +797,23 @@ def cost_effective_inference(data, model, batch_size=1000):
 
 ---
 
-## 5. LLM Evaluation & Monitoring {#llm-evaluation}
+## 5. LLM Evaluation & Monitoring
 
 ### LLM-as-a-Judge Framework (2026)
 ```python
-import anthropic
 from typing import List, Dict
+
+try:
+    import anthropic
+    ANTHROPIC_AVAILABLE = True
+except ImportError:
+    ANTHROPIC_AVAILABLE = False
+    print("Warning: anthropic library not installed. Install with: pip install anthropic")
 
 class LLMJudge:
     def __init__(self, judge_model="claude-3-opus-20240229"):
+        if not ANTHROPIC_AVAILABLE:
+            raise ImportError("anthropic library is required. Install with: pip install anthropic")
         self.client = anthropic.Anthropic()
         self.judge_model = judge_model
     
@@ -994,7 +1002,7 @@ class HallucinationDetector:
 
 ---
 
-## 6. Agentic AI Architecture {#agentic-ai}
+## 6. Agentic AI Architecture
 
 ### Multi-Agent System Framework
 ```python
@@ -1219,7 +1227,7 @@ class AgentMemory:
 
 ---
 
-## 7. Production MLOps Best Practices {#production-mlops}
+## 7. Production MLOps Best Practices
 
 ### Complete MLOps Pipeline
 ```python
@@ -1403,7 +1411,7 @@ class ModelMonitor:
 
 ---
 
-## 8. Error Handling & Robustness {#error-handling}
+## 8. Error Handling & Robustness
 
 ### Comprehensive Error Handling
 ```python

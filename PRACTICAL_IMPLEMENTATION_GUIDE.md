@@ -13,7 +13,7 @@
 
 ---
 
-## Week 1 Projects {#week1-projects}
+## Week 1 Projects
 
 ### Project 1: Custom Data Structures Library
 
@@ -858,7 +858,7 @@ if __name__ == "__main__":
 
 ---
 
-## Week 2 Projects {#week2-projects}
+## Week 2 Projects
 
 ### Project 4: ML Model Comparison Framework
 
@@ -877,6 +877,7 @@ from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.linear_model import LogisticRegression, LinearRegression
 from sklearn.svm import SVC, SVR
 from sklearn.neighbors import KNeighborsClassifier
@@ -1090,7 +1091,7 @@ if __name__ == "__main__":
 
 ---
 
-## Week 3 Projects {#week3-projects}
+## Week 3 Projects
 
 ### Project 5: Computer Vision Pipeline
 

@@ -17,7 +17,7 @@
 
 ---
 
-## 1. Learning Platforms & Courses {#learning-platforms}
+## 1. Learning Platforms & Courses
 
 ### Online Course Platforms
 
@@ -78,7 +78,7 @@
 
 ---
 
-## 2. Books & Publications {#books}
+## 2. Books & Publications
 
 ### Essential Books (Must Read)
 
@@ -184,7 +184,7 @@
 
 ---
 
-## 3. Practice Platforms {#practice}
+## 3. Practice Platforms
 
 ### Coding Practice
 
@@ -268,7 +268,7 @@
 
 ---
 
-## 4. Development Tools {#dev-tools}
+## 4. Development Tools
 
 ### IDEs & Editors
 
@@ -457,7 +457,7 @@
 
 ---
 
-## 5. Communities & Forums {#communities}
+## 5. Communities & Forums
 
 ### Reddit Communities
 
@@ -550,7 +550,7 @@
 
 ---
 
-## 6. YouTube Channels & Video Content {#youtube}
+## 6. YouTube Channels & Video Content
 
 ### Educational Channels
 
@@ -627,7 +627,7 @@
 
 ---
 
-## 7. Research Papers & Preprints {#research}
+## 7. Research Papers & Preprints
 
 ### Paper Repositories
 
@@ -693,7 +693,7 @@
 
 ---
 
-## 8. Datasets & Competitions {#datasets}
+## 8. Datasets & Competitions
 
 ### Dataset Repositories
 
@@ -748,7 +748,7 @@
 
 ---
 
-## 9. Newsletters & Blogs {#newsletters}
+## 9. Newsletters & Blogs
 
 ### Newsletters (Daily/Weekly)
 
@@ -814,7 +814,7 @@
 
 ---
 
-## 10. Conferences & Events {#conferences}
+## 10. Conferences & Events
 
 ### Major AI/ML Conferences
 

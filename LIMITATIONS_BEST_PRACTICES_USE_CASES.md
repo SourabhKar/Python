@@ -14,7 +14,7 @@
 
 ---
 
-## 1. Algorithm Selection Guide {#algorithm-selection}
+## 1. Algorithm Selection Guide
 
 ### Classification Algorithms
 
@@ -252,7 +252,7 @@
 
 ---
 
-## 2. Limitations and Trade-offs {#limitations}
+## 2. Limitations and Trade-offs
 
 ### Deep Learning Models
 
@@ -369,7 +369,7 @@
 
 ---
 
-## 3. Best Practices by Domain {#best-practices}
+## 3. Best Practices by Domain
 
 ### Computer Vision
 
@@ -584,7 +584,7 @@
 
 ---
 
-## 4. Use Case Scenarios {#use-cases}
+## 4. Use Case Scenarios
 
 ### Scenario 1: E-commerce Product Recommendations
 
@@ -730,7 +730,7 @@
 
 ---
 
-## 5. Technology Stack Decisions {#tech-stack}
+## 5. Technology Stack Decisions
 
 ### Python vs Other Languages
 
@@ -857,7 +857,7 @@
 
 ---
 
-## 6. Performance Benchmarks {#benchmarks}
+## 6. Performance Benchmarks
 
 ### Inference Speed (Approximate, on modern GPU)
 
@@ -892,7 +892,7 @@
 
 ---
 
-## 7. Future-Proofing Strategies {#future-proof}
+## 7. Future-Proofing Strategies
 
 ### Skills to Focus On (2026-2030)
 
@@ -975,41 +975,60 @@
 
 ### Decision Tree
 
-```
-Start
-├─ Data Size?
-│  ├─ < 10K samples
-│  │  └─ Use: Traditional ML (XGBoost, Random Forest)
-│  │     └─ If tabular: XGBoost
-│  │     └─ If image: Transfer learning (ResNet + Fine-tune)
-│  │     └─ If text: TF-IDF + Classical ML
-│  │
-│  └─ > 10K samples
-│     └─ Data Type?
-│        ├─ Tabular
-│        │  └─ Use: Gradient Boosting (XGBoost/LightGBM)
-│        │     └─ Need interpretability? Add SHAP
-│        │
-│        ├─ Image
-│        │  └─ Use: CNNs (ResNet, EfficientNet)
-│        │     └─ Transfer learning almost always
-│        │
-│        ├─ Text
-│        │  └─ Use: Transformers (BERT, RoBERTa)
-│        │     └─ If < 100K: Use distilled models
-│        │
-│        └─ Time Series
-│           └─ Use: Prophet (simple), LSTM/Transformer (complex)
+```text
+Start: Choose ML Algorithm
+|
++-- Q1: What is your data size?
+    |
+    +-- Less than 10K samples
+    |   |
+    |   +-- Use: Traditional ML (XGBoost, Random Forest)
+    |       |
+    |       +-- Data Type?
+    |           |
+    |           +-- Tabular --> XGBoost
+    |           +-- Image --> Transfer learning (ResNet + Fine-tune)
+    |           +-- Text --> TF-IDF + Classical ML
+    |
+    +-- More than 10K samples
+        |
+        +-- Data Type?
+            |
+            +-- Tabular
+            |   |
+            |   +-- Use: Gradient Boosting (XGBoost/LightGBM)
+            |       |
+            |       +-- Need interpretability? Add SHAP
+            |
+            +-- Image
+            |   |
+            |   +-- Use: CNNs (ResNet, EfficientNet)
+            |       |
+            |       +-- Transfer learning recommended
+            |
+            +-- Text
+            |   |
+            |   +-- Use: Transformers (BERT, RoBERTa)
+            |       |
+            |       +-- Less than 100K? Use distilled models
+            |
+            +-- Time Series
+                |
+                +-- Use: Prophet (simple) or LSTM/Transformer (complex)
 
-└─ Production Requirements?
-   ├─ Real-time (< 100ms)
-   │  └─ Optimize: Quantization, Distillation, Simpler model
-   │
-   ├─ Batch Processing
-   │  └─ Use: Best accuracy model, optimize for throughput
-   │
-   └─ Edge Deployment
-      └─ Use: MobileNet, DistilBERT, Quantized models
+Production Requirements?
+|
++-- Real-time (less than 100ms latency)
+|   |
+|   +-- Optimize: Quantization, Distillation, Simpler model
+|
++-- Batch Processing
+|   |
+|   +-- Use: Best accuracy model, optimize for throughput
+|
++-- Edge Deployment
+    |
+    +-- Use: MobileNet, DistilBERT, Quantized models
 ```
 
 ---
